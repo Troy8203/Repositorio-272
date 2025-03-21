@@ -1,5 +1,17 @@
 ## Funciones
-
+```sql
+CREATE OR REPLACE FUNCTION function_name(param1 datatype, param2 datatype)
+RETURN return_datatype
+IS
+    output_value return_datatype;
+BEGIN
+    -- cuerpo de la función con INTO
+    RETURN output_value;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN value_default;
+END function_name;
+```
 
 ## Ejercicios
 #### Ejercicio 1
@@ -58,44 +70,4 @@ Calcular el Total de Pasajeros Transportados por un Autobús
 SELECT SUM(pasajeros_transportados) total
 FROM viajes
 WHERE viaje_id = 1
-```
-
-#### Ejercicio 3
-Para ustedes
-Calcular el Costo Total de Mantenimiento de un Autobús
-```sql
-SELECT SUM(costo)
-FROM mantenimiento
-WHERE mantenimiento_id=1
-```
-
-#### Ejercicio 4
-Verificar la Disponibilidad de un Autobús en una Fecha
-Usar `TO_DATE('2023-10-10', 'YYYY-MM-DD')`
-2 Parametros
-```sql
-SELECT *
-FROM viajes
-WHERE viaje_id = 1 AND fecha_viaje = (TO_DATE('2023-10-12', 'YYYY-MM-DD'))
-```
-
-```sql
-CREATE OR REPLACE FUNCTION AutobusDisponible(
-    p_autobus_id IN NUMBER,
-    p_fecha IN DATE
-) RETURN BOOLEAN
-IS
-    v_viajes_count NUMBER := 0;
-BEGIN
-    -- Contar los viajes programados para el autobús en la fecha dada
-    SELECT COUNT(*)
-    INTO v_viajes_count
-    FROM Viajes
-    WHERE autobus_id = p_autobus_id
-      AND TRUNC(fecha_viaje) = TRUNC(p_fecha); -- TRUNC para ignorar la hora
-
-    -- Retornar TRUE si no hay viajes, FALSE en caso contrario
-    RETURN (v_viajes_count = 0);
-END;
-/
 ```
