@@ -174,15 +174,21 @@ VALUES (2, 2, 2, TO_DATE('2023-10-10', 'YYYY-MM-DD'), 75, 'B2');
 ## Eliminación de Base de Datos
 
 ```sql
-CREATE OR REPLACE FUNCTION function_name(param1 datatype, param2 datatype)
-RETURN return_datatype
-IS
-    output_value return_datatype;
-BEGIN
-    -- cuerpo de la función con INTO
-    RETURN output_value;
-EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        RETURN value_default;
-END function_name;
+DROP TABLE Boletos;
+
+DROP TABLE Viajes;
+
+DROP TABLE Pasajeros;
+
+DROP TABLE Mantenimiento;
+
+DROP TABLE Horarios;
+
+DROP TABLE Autobus_Ruta;
+
+DROP TABLE Rutas;
+
+DROP TABLE Conductores;
+
+DROP TABLE Autobuses;
 ```
