@@ -6,9 +6,9 @@ Este documento describe las diferentes formas de configurar la base de datos.
 
 ## Métodos de configuración
 
-- [Configuración con Workbench](ruta_a_tu_documentacion_workbench.md)
-- [Configuración manual con Docker](/docs/configuracion/docker.md#1-configuración-manual-con-docker)
-- [Configuración con Docker Compose](/docs/configuracion/docker.md#2-configuración-con-docker-compose)
+- [Configuración con Workbench](.)
+- [Configuración manual con Docker](/docs/configuracion/docker#1-configuración-manual-con-docker)
+- [Configuración con Docker Compose](/docs/configuracion/docker#2-configuración-con-docker-compose)
 
 ## Conexión con SQLTools (VSCode - Codium)
 
