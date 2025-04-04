@@ -4,11 +4,7 @@ remote_theme: "jekyll/minima@1e8a445"
 markdown: kramdown
 minima:
   skin: auto
-  nav_pages:
-    - "index.md"
-    - "acerca.md"
-    - "about.md"
-
+  nav_pages: []
   author:
     name: Roy Ayala Ruiz
   social_links:
