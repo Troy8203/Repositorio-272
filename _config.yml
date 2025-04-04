@@ -3,4 +3,16 @@ description: Repositorio de la materia INF-272
 theme: minima
 markdown: kramdown
 minima:
-  skin: auto
+  skin: dark
+  nav_pages:
+    - ./docs/clases/clases.md
+    - configuracion.md
+  author:
+    name: Roy Ayala Ruiz
+  social_links:
+    - title: Grupo de Telegram
+      icon: telegram
+      url: "https://t.me/+gnFWDJY6ULUzMWJh"
+    - title: Repositorio github
+      icon: github
+      url: "https://github.com/Troy8203/Repositorio-272"
