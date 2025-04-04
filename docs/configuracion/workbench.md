@@ -1,5 +1,6 @@
 ---
 layout: page
+title: ""
 ---
 
 # Configuración de PostgreSQL con Workbench

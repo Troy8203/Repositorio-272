@@ -1,5 +1,6 @@
 ---
 layout: page
+title: ""
 ---
 
 # **Proyecto Base - Base de Datos para Autobuses**

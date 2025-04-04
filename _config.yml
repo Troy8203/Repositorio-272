@@ -32,3 +32,4 @@ defaults:
       type: "page"
     values:
       layout: "page"
+      title: ""
