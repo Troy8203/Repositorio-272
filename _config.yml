@@ -31,5 +31,4 @@ defaults:
       path: ""
       type: "page"
     values:
-      layout: "page"
-      title: ""
+      layout: "default"
