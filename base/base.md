@@ -1,6 +1,6 @@
 ---
-layout: page
-title: ""
+layout: base
+hidden: true
 ---
 
 # **Proyecto Base - Base de Datos para Autobuses**

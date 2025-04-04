@@ -18,11 +18,3 @@ minima:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-defaults:
-  - scope:
-      path: ""
-      type: base
-    values:
-      layout: base
-      hidden: true

@@ -1,6 +1,6 @@
 ---
-layout: page
-title: ""
+layout: base
+hidden: true
 ---
 
 # Configuración de PostgreSQL con Docker
