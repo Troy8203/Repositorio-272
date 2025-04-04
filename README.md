@@ -11,17 +11,17 @@ Bienvenido al repositorio de la materia **INF 272 - Taller de Base de Datos**. A
 ### Configuración del Entorno
 
 Guía detallada sobre cómo configurar la base de datos utilizando diferentes herramientas como **Docker**, **Workbench** y **SQL Tools** en VSCode.  
-[Ir a la configuración](docs/configuracion.md)
+[Ir a la configuración](./docs/configuracion/configuracion)
 
 ### Clases
 
 Accede a los materiales y recursos utilizados en cada sesión de la materia. Se incluyen apuntes, scripts SQL y ejemplos prácticos.  
-[Ir a las clases](clases/)
+[Ir a las clases](./docs/clases/clases)
 
 ### Prácticas
 
 Aquí encontrarás las instrucciones detalladas de cada práctica, incluyendo ejercicios y desafíos para reforzar los conocimientos adquiridos en clase.  
-[Ir a las prácticas](practica/)
+[Ir a las prácticas]()
 
 ---
 
@@ -49,6 +49,6 @@ Este curso hace uso de las siguientes tecnologías:
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/usuario/inf272.git
-cd inf272
+git clone https://github.com/Troy8203/Repositorio-272.git
+cd Repositorio-272
 ```
