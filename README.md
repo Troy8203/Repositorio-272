@@ -1,6 +1,13 @@
 ---
-layout: default
-title: Nombre de la página
+title: Inicio
+hidden: true
+layout: base
+categories: misc
+author:
+  - Bart Simpson
+  - Nelson Mandela Muntz
+meta: "Springfield"
+modified_date: 2016-05-27
 ---
 
 # INF 272 - Clases y Prácticas
