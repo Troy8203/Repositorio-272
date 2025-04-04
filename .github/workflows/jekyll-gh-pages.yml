@@ -1,4 +1,4 @@
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy Jekyll
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check status
+      - name: List all files
         run: tree
 
       - name: Convert README to index.md
@@ -38,9 +38,6 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
-      - name: Show all files
-        run: tree
 
       - name: show content header
         run: cat _includes/header.html

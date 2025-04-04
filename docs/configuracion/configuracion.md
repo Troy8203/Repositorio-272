@@ -8,9 +8,15 @@ layout: page
 
 Este documento describe las diferentes formas de configurar la base de datos.
 
+## Proyecto Base
+
+El proyecto base proporciona una base de datos de ejemplo para un sistema de gestión de autobuses. Contiene tablas para Autobuses, Conductores, Rutas, Viajes y otros elementos relacionados.
+
+- [Crear la Base de Datos](../../base/base)
+
 ## Métodos de configuración
 
-- [Configuración con Workbench](.)
+- [Configuración del PgAdmin](./workbench)
 - [Configuración manual con Docker](./docker#1-configuración-manual-con-docker)
 - [Configuración con Docker Compose](./docker#2-configuración-con-docker-compose)
 
@@ -34,4 +40,4 @@ Se puede utilizar la extensión [SQL Tools](https://marketplace.visualstudio.com
 }
 ```
 
-Este archivo de configuración permite conectar SQLTools con la base de datos PostgreSQL en `localhost`, usando las credenciales definidas en la configuración del entorno.
+> Este archivo de configuración permite conectar SQLTools con la base de datos PostgreSQL en `localhost`, usando las credenciales definidas en la configuración del entorno.
