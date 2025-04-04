@@ -5,8 +5,10 @@ markdown: kramdown
 minima:
   skin: auto
   nav_pages:
-    - ./docs/clases/clases.md
-    - configuracion.md
+    - "README.md"
+    - "README.md"
+    - "README.md"
+
   author:
     name: Roy Ayala Ruiz
   social_links:
@@ -31,6 +33,6 @@ share-links-active:
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: "page"
     values:
       layout: "page"
