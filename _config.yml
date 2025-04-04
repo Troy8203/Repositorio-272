@@ -5,9 +5,8 @@ markdown: kramdown
 minima:
   skin: auto
   nav_pages:
-    - "README.md"
-    - "README.md"
-    - "README.md"
+    - README.md
+    - about.md
 
   author:
     name: Roy Ayala Ruiz
