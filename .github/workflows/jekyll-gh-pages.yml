@@ -36,6 +36,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
+      - name: show content header
+        run: cat _includes/header.html
+
   deploy:
     environment:
       name: github-pages
