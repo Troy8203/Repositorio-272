@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Convert README to index.md
+        run: cp README.md index.md
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
