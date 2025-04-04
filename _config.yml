@@ -7,7 +7,6 @@ minima:
   nav_pages:
     - ./docs/clases/clases.md
     - configuracion.md
-  show_excerpts: false
   author:
     name: Roy Ayala Ruiz
   social_links:
