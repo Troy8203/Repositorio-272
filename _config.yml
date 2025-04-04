@@ -1,6 +1,6 @@
 title: Taller de Base de datos INF-272
 description: Repositorio de la materia INF-272
-theme: jekyll/minima
+theme: minima
 markdown: kramdown
 minima:
   skin: auto
