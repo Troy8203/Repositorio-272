@@ -21,6 +21,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check status
+        run: tree
+
       - name: Convert README to index.md
         run: cp README.md index.md
 
@@ -35,6 +38,9 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+
+      - name: Show all files
+        run: tree
 
       - name: show content header
         run: cat _includes/header.html
