@@ -1,4 +1,6 @@
-title: Desplegado con GitHub Actions
-description: Desplegado con GitHub Actions y Jekyll
-theme: jekyll-theme-hacker
+title: Taller de Base de datos INF-272
+description: Repositorio de la materia INF-272
+theme: jekyll/minima
 markdown: kramdown
+minima:
+  skin: auto
