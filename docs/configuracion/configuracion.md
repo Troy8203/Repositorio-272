@@ -1,6 +1,5 @@
 ---
-title: Configuracion
-layout: default
+layout: page
 ---
 
 # Configuración del entorno
