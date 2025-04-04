@@ -7,8 +7,8 @@ Este documento describe las diferentes formas de configurar la base de datos.
 ## Métodos de configuración
 
 - [Configuración con Workbench](.)
-- [Configuración manual con Docker](./docs/configuracion/docker#1-configuración-manual-con-docker)
-- [Configuración con Docker Compose](./docs/configuracion/docker#2-configuración-con-docker-compose)
+- [Configuración manual con Docker](/docker#1-configuración-con-docker-compose)
+- [Configuración con Docker Compose](/docker#2-configuración-con-docker-compose)
 
 ## Conexión con SQLTools (VSCode - Codium)
 
@@ -18,7 +18,7 @@ Se puede utilizar la extensión [SQL Tools](https://marketplace.visualstudio.com
 
 ```json
 {
-  "name": "PGSQL",
+  "name": "POSTGRES",
   "server": "localhost",
   "driver": "PostgreSQL",
   "port": 5433,
