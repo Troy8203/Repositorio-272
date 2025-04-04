@@ -22,7 +22,7 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "page"
+      type: "base"
     values:
-      layout: "page"
+      layout: "base"
       hidden: true
