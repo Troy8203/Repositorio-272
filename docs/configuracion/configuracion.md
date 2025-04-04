@@ -1,6 +1,6 @@
 ---
 title: Configuracion
-hidden: true
+layout: default
 ---
 
 # Configuración del entorno

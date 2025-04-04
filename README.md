@@ -1,4 +1,6 @@
 ---
+title: Inicio
+hidden: true
 layout: post
 categories: misc
 author:
