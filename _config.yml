@@ -16,3 +16,21 @@ minima:
     - title: Repositorio github
       icon: github
       url: "https://github.com/Troy8203/Repositorio-272"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+share-links-active:
+  twitter: fals
+  facebook: fals
+  linkedin: fals
+  vk: false
+  reddit: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
