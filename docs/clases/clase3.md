@@ -119,83 +119,14 @@ SELECT contar_boletos_vendidos(2);
 
 ---
 
-### 3. Obtener la Distancia de una Ruta
+### 3. Ejercicios Extra
 
-Esta función devuelve la distancia de una ruta a partir de su nombre.
+- 1. Crear una funcion que me muestre el nombre completo del conductor dado su licencia de conducir
 
-```sql
-CREATE OR REPLACE FUNCTION obtener_distancia_ruta(nombre_ruta VARCHAR)
-RETURNS INT AS $$
-DECLARE
-    distancia INT;
-BEGIN
-    SELECT distancia_km INTO distancia
-    FROM Rutas
-    WHERE Rutas.nombre_ruta = obtener_distancia_ruta.nombre_ruta;
+- 2. Crear una funcion que muestre cada conductor cuanta distancia ha recorrido en todos sus viajes dado su id
 
-    RETURN distancia;
-EXCEPTION
-    WHEN NO_DATA_FOUND THEN
-        RETURN -1;
-    WHEN OTHERS THEN
-        RAISE NOTICE 'Error inesperado en obtener_distancia_ruta';
-        RETURN NULL;
-END;
-$$ LANGUAGE plpgsql;
-```
+> Recuerda que hay conductores que estan registrados pero no han recorrido ningun viaje
 
-**Ejecución:**
+Mostrar el siguiente resultado:
 
-```sql
-SELECT obtener_distancia_ruta('Ruta Norte');
-```
-
----
-
-### 4. Obtener Rutas Únicas
-
-Esta función devuelve todas las rutas sin repetir valores mediante `DISTINCT`.
-
-```sql
-CREATE OR REPLACE FUNCTION obtener_rutas_unicas()
-RETURNS TABLE(nombre_ruta VARCHAR) AS $$
-BEGIN
-    RETURN QUERY
-    SELECT DISTINCT nombre_ruta FROM Rutas;
-EXCEPTION
-    WHEN OTHERS THEN
-        RAISE NOTICE 'Error inesperado en obtener_rutas_unicas';
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Ejecución:**
-
-```sql
-SELECT * FROM obtener_rutas_unicas();
-```
-
----
-
-### 5. Obtener Información de un Viaje
-
-Esta función combina las funciones anteriores para obtener el número de boletos vendidos y la distancia de la ruta de un viaje.
-
-```sql
-CREATE OR REPLACE FUNCTION obtener_info_viaje(viaje_id INT, nombre_ruta VARCHAR)
-RETURNS TABLE(total_boletos INT, distancia INT) AS $$
-BEGIN
-    RETURN QUERY
-    SELECT contar_boletos_vendidos(viaje_id), obtener_distancia_ruta(nombre_ruta);
-EXCEPTION
-    WHEN OTHERS THEN
-        RAISE NOTICE 'Error inesperado en obtener_info_viaje';
-END;
-$$ LANGUAGE plpgsql;
-```
-
-**Ejecución:**
-
-```sql
-SELECT * FROM obtener_info_viaje(2, 'Ruta Norte');
-```
+[![image.png](https://i.postimg.cc/3xCLYH0S/image.png)](https://postimg.cc/NKF8kS4m)
