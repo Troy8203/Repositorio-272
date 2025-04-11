@@ -2,7 +2,7 @@ name: Deploy Jekyll
 
 on:
   push:
-    branches: ["main"]
+    branches: ["develop"]
   workflow_dispatch:
 
 permissions:
@@ -23,9 +23,6 @@ jobs:
 
       - name: List all files
         run: tree
-
-      - name: Convert README to index.md
-        run: cp README.md index.md
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
