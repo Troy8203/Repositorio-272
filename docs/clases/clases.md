@@ -13,4 +13,5 @@ Aqui encontraras los materiales y recursos utilizados en cada sesión de la mate
 
 - [Clase 1 - 14/03/2025](./clase1)
 - [Clase 2 - 21/03/2025](./clase2)
-- [Clase 3 - 28/03/2025](./clase3)
+- [Clase 3 - 04/04/2025](./clase3)
+- [Clase 3 - 11/04/2025](./clase4)

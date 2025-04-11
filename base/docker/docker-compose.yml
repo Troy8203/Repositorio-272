@@ -2,7 +2,7 @@
 
 services:
   postgres:
-    image: postgres
+    image: clkao/postgres-plv8
     container_name: postgres
     environment:
       POSTGRES_USER: admin

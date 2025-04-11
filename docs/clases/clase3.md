@@ -8,7 +8,7 @@ hidden: true
 [![Atras](https://img.shields.io/badge/-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmN2Y3ZjciIGQ9Im03LjgyNSAxM2w0LjkgNC45cS4zLjMuMjg4Ljd0LS4zMTMuN3EtLjMuMjc1LS43LjI4OHQtLjctLjI4OGwtNi42LTYuNnEtLjE1LS4xNS0uMjEzLS4zMjVUNC40MjYgMTJ0LjA2My0uMzc1dC4yMTItLjMyNWw2LjYtNi42cS4yNzUtLjI3NS42ODgtLjI3NXQuNzEyLjI3NXEuMy4zLjMuNzEzdC0uMy43MTJMNy44MjUgMTFIMTlxLjQyNSAwIC43MTMuMjg4VDIwIDEydC0uMjg4LjcxM1QxOSAxM3oiLz48L3N2Zz4=)](../clases/clases)
 [![Inicio](https://img.shields.io/badge/Inicio-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmN2Y3ZjciIGQ9Ik00IDE5di05cTAtLjQ3NS4yMTMtLjl0LjU4Ny0uN2w2LTQuNXEuNTI1LS40IDEuMi0uNHQxLjIuNGw2IDQuNXEuMzc1LjI3NS41ODguN1QyMCAxMHY5cTAgLjgyNS0uNTg4IDEuNDEzVDE4IDIxaC0zcS0uNDI1IDAtLjcxMi0uMjg4VDE0IDIwdi01cTAtLjQyNS0uMjg4LS43MTJUMTMgMTRoLTJxLS40MjUgMC0uNzEyLjI4OFQxMCAxNXY1cTAgLjQyNS0uMjg4LjcxM1Q5IDIxSDZxLS44MjUgMC0xLjQxMi0uNTg3VDQgMTkiLz48L3N2Zz4=)](../../README)
 
-`Clase 3 - 28/03/2025`
+`Clase 3 - 04/03/2025`
 
 ## Funciones Almacenadas con PostgreSQL
 
@@ -44,6 +44,7 @@ EXCEPTION
         RAISE NOTICE 'Ha ocurrido un error inesperado';
         RETURN NULL;
 END;
+-- Delimitador PL/pgSQL,
 $$ LANGUAGE plpgsql;
 ```
 
@@ -130,3 +131,42 @@ SELECT contar_boletos_vendidos(2);
 Mostrar el siguiente resultado:
 
 [![image.png](https://i.postimg.cc/3xCLYH0S/image.png)](https://postimg.cc/NKF8kS4m)
+
+Crear la sentecia de la Función
+
+```sql
+SELECT SUM(distancia_km)
+    FROM conductores,
+        viajes,
+        rutas
+    WHERE conductores.conductor_id = 1
+        AND conductores.conductor_id = viajes.conductor_id
+        AND viajes.ruta_id = rutas.ruta_id;
+```
+
+Crear la estructura de la Función
+
+```sql
+CREATE OR REPLACE FUNCTION fn_distancia(xconductor_id INT)
+RETURNS INT AS $$
+DECLARE
+    xdistancia INT;
+BEGIN
+    SELECT COALESCE(SUM(distancia_km), 0) INTO xdistancia
+        FROM conductores,
+            viajes,
+            rutas
+        WHERE conductores.conductor_id = xconductor_id
+            AND conductores.conductor_id = viajes.conductor_id
+            AND viajes.ruta_id = rutas.ruta_id;
+
+    RETURN xdistancia;
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RETURN 0;
+    WHEN OTHERS THEN
+        RAISE NOTICE 'Ha ocurrido un error inesperado';
+        RETURN 0;
+END;
+$$ LANGUAGE plpgsql;
+```
