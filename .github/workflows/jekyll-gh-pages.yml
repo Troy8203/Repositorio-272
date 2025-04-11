@@ -2,7 +2,7 @@ name: Deploy Jekyll
 
 on:
   push:
-    branches: ["deploy"]
+    branches: ["gh-pages"]
   workflow_dispatch:
 
 permissions:
