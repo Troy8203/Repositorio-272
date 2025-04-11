@@ -5,15 +5,20 @@
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-pre > .hihlight {
-  border-radius: 12px;
+:root {
+  --rounded: 10px;
 }
 
-p:has(a:has(img)) {
+.highlighter-rouge .highlight {
+  border-radius: var(--rounded);
+}
+
+p:has(a img) {
   display: flex;
   justify-content: center;
+  margin: 2em auto;
 }
 
 img {
-  border-radius: 12px;
+  border-radius: var(--rounded);
 }
