@@ -15,7 +15,10 @@
 
 p:has(a img) {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3em;
+
   margin: 2em auto;
 }
 
