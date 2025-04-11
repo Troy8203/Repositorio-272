@@ -2,7 +2,7 @@ name: Deploy Jekyll
 
 on:
   push:
-    branches: ["develop"]
+    branches: ["deploy"]
   workflow_dispatch:
 
 permissions:
