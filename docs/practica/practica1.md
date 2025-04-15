@@ -11,7 +11,7 @@ hidden: true
 
 Presentar la siguiente practica hasta el dia lunes 28 de Abril - `28/04/2025`, llenar el siguiente formulario, donde debe presentar las soluciones de las funciones.
 
-- 🔗 [link](www)
+- 🔗 [Formulario](https://forms.gle/Rjqqssms1sBUiSQK9)
 
 > Recuerda enviar las soluciones y adjuntar un PDF documentado con las capturas de los resultados
 
