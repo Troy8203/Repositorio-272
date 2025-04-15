@@ -5,13 +5,30 @@ hidden: true
 
 # Clases
 
-[![Inicio](https://img.shields.io/badge/Inicio-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmN2Y3ZjciIGQ9Ik00IDE5di05cTAtLjQ3NS4yMTMtLjl0LjU4Ny0uN2w2LTQuNXEuNTI1LS40IDEuMi0uNHQxLjIuNGw2IDQuNXEuMzc1LjI3NS41ODguN1QyMCAxMHY5cTAgLjgyNS0uNTg4IDEuNDEzVDE4IDIxaC0zcS0uNDI1IDAtLjcxMi0uMjg4VDE0IDIwdi01cTAtLjQyNS0uMjg4LS43MTJUMTMgMTRoLTJxLS40MjUgMC0uNzEyLjI4OFQxMCAxNXY1cTAgLjQyNS0uMjg4LjcxM1Q5IDIxSDZxLS44MjUgMC0xLjQxMi0uNTg3VDQgMTkiLz48L3N2Zz4=)](../../)
+[![Inicio](https://img.shields.io/badge/Inicio-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwg...)](../../)
 
-Aqui encontraras los materiales y recursos utilizados en cada sesión de la materia. Se incluyen apuntes, scripts SQL y ejemplos prácticos.
+En esta sección encontrarás todos los **materiales, apuntes y recursos** utilizados a lo largo de las clases de la materia.  
+Cada clase incluye:  
+- Apuntes teóricos  
+- Scripts SQL prácticos  
+- Ejercicios guiados y explicaciones  
 
-## Material clases
+---
 
-- [Clase 1 - 14/03/2025](./clase1)
-- [Clase 2 - 21/03/2025](./clase2)
-- [Clase 3 - 04/04/2025](./clase3)
-- [Clase 4 - 11/04/2025](./clase4)
+## Material por clase
+
+| Clase  | Fecha       | Enlace          |
+|--------|-------------|-----------------|
+| Clase 1 | 14/03/2025 | [Ver Clase 1](./clase1) |
+| Clase 2 | 21/03/2025 | [Ver Clase 2](./clase2) |
+| Clase 3 | 04/04/2025 | [Ver Clase 3](./clase3) |
+| Clase 4 | 11/04/2025 | [Ver Clase 4](./clase4) |
+| Clase 5 | 15/04/2025 | [Ver Clase 5](./clase5) |
+
+---
+
+## Apuntes generales
+
+- [Funciones Almacenadas en PostgreSQL](./funciones.md)
+
+Recurso completo sobre cómo construir, estructurar y manejar funciones almacenadas en PostgreSQL.
