@@ -1,12 +1,29 @@
+---
+layout: base
+hidden: true
+---
+
+# Base de Datos supermercado
+
+[![Atras](https://img.shields.io/badge/-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmN2Y3ZjciIGQ9Im03LjgyNSAxM2w0LjkgNC45cS4zLjMuMjg4Ljd0LS4zMTMuN3EtLjMuMjc1LS43LjI4OHQtLjctLjI4OGwtNi42LTYuNnEtLjE1LS4xNS0uMjEzLS4zMjVUNC40MjYgMTJ0LjA2My0uMzc1dC4yMTItLjMyNWw2LjYtNi42cS4yNzUtLjI3NS42ODgtLjI3NXQuNzEyLjI3NXEuMy4zLjMuNzEzdC0uMy43MTJMNy44MjUgMTFIMTlxLjQyNSAwIC43MTMuMjg4VDIwIDEydC0uMjg4LjcxM1QxOSAxM3oiLz48L3N2Zz4=)](../configuracion/configuracion)
+[![Inicio](https://img.shields.io/badge/Inicio-232323?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IS0tIFVwbG9hZGVkIHRvOiBTVkcgUmVwbywgd3d3LnN2Z3JlcG8uY29tLCBHZW5lcmF0b3I6IFNWRyBSZXBvIE1peGVyIFRvb2xzIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmN2Y3ZjciIGQ9Ik00IDE5di05cTAtLjQ3NS4yMTMtLjl0LjU4Ny0uN2w2LTQuNXEuNTI1LS40IDEuMi0uNHQxLjIuNGw2IDQuNXEuMzc1LjI3NS41ODguN1QyMCAxMHY5cTAgLjgyNS0uNTg4IDEuNDEzVDE4IDIxaC0zcS0uNDI1IDAtLjcxMi0uMjg4VDE0IDIwdi01cTAtLjQyNS0uMjg4LS43MTJUMTMgMTRoLTJxLS40MjUgMC0uNzEyLjI4OFQxMCAxNXY1cTAgLjQyNS0uMjg4LjcxM1Q5IDIxSDZxLS44MjUgMC0xLjQxMi0uNTg3VDQgMTkiLz48L3N2Zz4=)](../../../)
+
+Las siguiente base de datos tiene la siguiente estructura:
+
+[![Screenshot-2025-04-14-at-00-16-58-Untitled-dbdiagram-io.png](https://i.postimg.cc/wBVCRzcK/Screenshot-2025-04-14-at-00-16-58-Untitled-dbdiagram-io.png)](https://postimg.cc/PLC30BRK)
+
+## **Comando para Crear la base de datos:**
+
+### **Comando para Crear la base de datos:**
+
 ```sql
 -- CREACIÓN DE LA BASE DE DATOS
 CREATE DATABASE supermercado;
+```
 
--- CONEXIÓN A LA BASE DE DATOS
-\c supermercado;
+### **Comando para Crear las Tablas:**
 
--- 1. CREACIÓN DE TABLAS
-
+```sql
 -- Tabla de Categorías
 CREATE TABLE categorias (
     categoria_id SERIAL PRIMARY KEY,
@@ -92,9 +109,12 @@ CREATE TABLE detalle_ventas (
     precio_unitario DECIMAL(10,2) NOT NULL,
     subtotal DECIMAL(10,2) NOT NULL
 );
+```
 
--- 2. INSERCIÓN DE DATOS
+### **Comando para realizar la inserción de Datos**
 
+```sql
+-- INSERCIÓN DE DATOS
 -- Insertar Categorías (10 registros)
 INSERT INTO categorias (nombre, descripcion) VALUES
 ('Lácteos', 'Productos derivados de la leche'),
@@ -197,7 +217,29 @@ INSERT INTO detalle_ventas (venta_id, producto_id, cantidad, precio_unitario, su
 (9, 10, 2, 3.45, 6.90),
 (10, 9, 3, 1.80, 5.40),
 (10, 7, 1, 69.99, 69.99);
+```
+
+### **Comando para Eliminar las Tablas:**
+
+```sql
+-- 1. Eliminar tabla detalle_ventas (depende de ventas y productos)
+DROP TABLE IF EXISTS detalle_ventas CASCADE;
+
+-- 2. Eliminar tabla ventas (depende de clientes y empleados)
+DROP TABLE IF EXISTS ventas CASCADE;
+
+-- 3. Eliminar tabla productos (depende de categorias y proveedores)
+DROP TABLE IF EXISTS productos CASCADE;
+
+-- 4. Eliminar tablas independientes
+DROP TABLE IF EXISTS empleados CASCADE;
+DROP TABLE IF EXISTS clientes CASCADE;
+DROP TABLE IF EXISTS proveedores CASCADE;
+DROP TABLE IF EXISTS categorias CASCADE;
+
+-- OPCIÓN ALTERNATIVA: Eliminar toda la base de datos (más radical)
+-- DROP DATABASE IF EXISTS supermercado;
 
 -- MENSAJE DE CONFIRMACIÓN
-SELECT 'Base de datos del supermercado creada y poblada exitosamente' AS mensaje;
+SELECT 'Todas las tablas del supermercado han sido eliminadas correctamente' AS mensaje;
 ```
