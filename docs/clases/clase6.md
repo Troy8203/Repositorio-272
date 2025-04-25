@@ -225,6 +225,20 @@ $$;
 - Dentro del `BEGIN ... END;` puedes usar bucles, condiciones, llamadas a procedimientos, etc.
 - `DECLARE` es opcional, pero se usa para definir variables internas del bloque.
 
+### Ejemplo DO
+
+```sql
+DO $$
+DECLARE
+  x INT := 1;
+  y INT := 2;
+  z INT;
+BEGIN
+  z := x + y;
+  RAISE NOTICE '%', z;
+END $$;
+```
+
 ## Funcionamiento `RAISE`
 
 `RAISE` se utiliza en PL/pgSQL para **mostrar mensajes** durante la ejecución del código. Es muy útil para depuración (`DEBUG`) o para lanzar errores personalizados.
