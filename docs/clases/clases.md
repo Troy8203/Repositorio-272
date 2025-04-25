@@ -24,6 +24,7 @@ Cada clase incluye:
 | Clase 3 | 04/04/2025 | [Ver Clase 3](./clase3) |
 | Clase 4 | 11/04/2025 | [Ver Clase 4](./clase4) |
 | Clase 5 | 15/04/2025 | [Ver Clase 5](./clase5) |
+| Clase 6 | 25/04/2025 | [Ver Clase 6](./clase6) |
 
 ---
 
