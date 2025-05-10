@@ -69,7 +69,7 @@ DECLARE
 BEGIN
     FOR each_row IN (SELECT * FROM table) LOOP
         CALL procedure_name(each_row.param1, param2);
-        RAISE DEBUG 'ID: %: %', each_row.param1, param2;
+        RAISE NOTICE 'ID: %: %', each_row.param1, param2;
     END LOOP;
 END;
 $$;
