@@ -10,14 +10,6 @@ hidden: true
 
 `Clase 8 - 09/05/2025`
 
-Perfecto, aquí te lo dejo limpio, sin emojis ni sección de conceptos clave, listo para compartir como material de clase.
-
----
-
-Perfecto, aquí tienes el material documentado en el formato que me pediste:
-
----
-
 ## Procedimientos Almacenados en PostgreSQL — Clase Avanzada
 
 En esta clase avanzamos en el uso de **procedimientos almacenados** y **funciones** para consultar datos relacionados entre varias tablas y presentar resultados ordenados, como obtener los viajes de un conductor con sus respectivas distancias.
@@ -92,7 +84,7 @@ CREATE OR REPLACE PROCEDURE p_mostrar_viajes_conductor(IN xid INT)
 AS $$
 DECLARE
     each_row RECORD;
-    xdestino VARCHAR; 
+    xdestino VARCHAR;
     xdistancia INT;
     xcount INT := 0;
 BEGIN
