@@ -9,9 +9,9 @@ hidden: true
 
 ## Instrucciones
 
-Presentar la siguiente practica hasta el dia lunes 10 de Junio - `10/06/2025`, llenar el siguiente formulario, donde debe presentar las soluciones de las funciones.
+Presentar la siguiente practica hasta el dia lunes 9 de Junio - `9/06/2025`, llenar el siguiente formulario, donde debe presentar las soluciones de las funciones.
 
-- 🔗 [Formulario](xcadaw)
+- 🔗 [Formulario](https://forms.gle/ApZXxvpdMeCgaKSL8)
 
 > Recuerda enviar las soluciones y adjuntar un PDF documentado con las capturas de los resultados
 
@@ -33,45 +33,49 @@ Crear un procedimiento que calcule y muestre la suma total de ventas que ha gest
 
 ##### Resultado:
 
-[![image.png](https://i.postimg.cc/ncbn1qyj/image.png)](https://postimg.cc/MX5k6fKq)
+[![image.png](https://i.postimg.cc/vBLF7Vxt/image.png)](https://postimg.cc/PpxRTN4C)
 
 #### Ejercicio 2
 
-Crear un procedimiento que indique el estado de cada mesa:
+Crear un procedimiento que indique el estado de cada mesa dado una fecha:
 
 - “Ocupada” si tiene alguna orden activa (una orden del día actual)
-- “Libre” si no tiene órdenes hoy
+- “Libre” si no tiene órdenes el xfecha
 
-##### Resultado:
+> Valores de entrada id_mesa, fecha
 
-[![image.png](https://i.postimg.cc/sgGcVzR1/image.png)](https://postimg.cc/HrH52fnC)
+##### Resultado con `2025-05-28`:
+
+[![image.png](https://i.postimg.cc/3Nvb9NB9/image.png)](https://postimg.cc/7JqVZxjT)
+
+##### Resultado con `2025-05-30`:
+
+[![image.png](https://i.postimg.cc/nryNtBz6/image.png)](https://postimg.cc/ctcFRKfm)
 
 #### Ejercicio 3
 
 Utilizar un cursor para mostrar todos los productos cuyo precio sea mayor a un valor dado. Imprimir nombre y precio.
 
-```sql
-SELECT fn_descuento(NULL)
-```
+##### Resultado con precio limite de `20000`:
 
-[![image.png](https://i.postimg.cc/85qQCVRX/image.png)](https://postimg.cc/DJdYCHY1)
+[![image.png](https://i.postimg.cc/5y9vsRb0/image.png)](https://postimg.cc/VrTd64SQ)
 
-Resultado:
+##### Resultado con precio limite de `7000`:
 
-[![image.png](https://i.postimg.cc/L5717q5D/image.png)](https://postimg.cc/rR1sRwSR)
+[![image.png](https://i.postimg.cc/zf1ydckr/image.png)](https://postimg.cc/WdXpzSKW)
 
 #### Ejercicio 4
 
 Utilizar un cursor para calcular el total de cada orden (suma de cantidad \* precio_unitario) y mostrar el ID de la orden y su total.
 
-Resultado:
+##### Resultado:
 
-[![image.png](https://i.postimg.cc/LXqwG6qQ/image.png)](https://postimg.cc/5YVsCJS8)
+[![image.png](https://i.postimg.cc/Kjrb80Mn/image.png)](https://postimg.cc/kR4zjFw4)
 
 #### Ejercicio 5
 
-Crear un procedimiento que use un cursor para encontrar y eliminar todos los productos que nunca han sido vendidos (no aparecen en detalle_orden).
+Crear un cursor que mustre el detalle producto con sus productos, cantidad y precio
 
-Resultado:
+##### Resultado:
 
-[![image.png](https://i.postimg.cc/gjWpWjNh/image.png)](https://postimg.cc/nj0gKF8V)
+[![image.png](https://i.postimg.cc/SQTwbZKF/image.png)](https://postimg.cc/hhmC91xp)
