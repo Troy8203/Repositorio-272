@@ -25,9 +25,11 @@ Accede a los materiales y recursos utilizados en cada sesión de la materia. Se 
 
 ### Prácticas
 
-Aquí encontrarás las instrucciones detalladas de cada práctica, incluyendo ejercicios y desafíos para reforzar los conocimientos adquiridos en clase.  
-[Ir a Practica Nro. 1](./docs/practica/practica1.md)
-[Ir a Practica Nro. 2](./docs/practica/practica2.md)
+Aquí encontrarás las instrucciones detalladas de cada práctica, incluyendo ejercicios y desafíos para reforzar los conocimientos adquiridos en clase.
+
+- [Ir a Practica Nro. 1](./docs/practica/practica1.md)
+
+- [Ir a Practica Nro. 2](./docs/practica/practica2.md)
 
 ---
 
