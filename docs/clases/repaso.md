@@ -132,7 +132,7 @@ $$;
 
 Los **triggers** o disparadores permiten ejecutar código automáticamente antes o después de eventos `INSERT`, `UPDATE`, o `DELETE`.
 
-![Image Triggers](https://scaler.com/topics/images/triggers-in-sql-1.webp)
+[![image.png](https://i.postimg.cc/NGRTZrLq/image.png)](https://postimg.cc/c64rnCQX)
 
 ### Sintaxis básica
 
