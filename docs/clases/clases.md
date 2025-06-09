@@ -18,18 +18,19 @@ Cada clase incluye:
 
 ## Material por clase
 
-| Clase    | Fecha      | Enlace                    |
-| -------- | ---------- | ------------------------- |
-| Clase 1  | 14/03/2025 | [Ver Clase 1](./clase1)   |
-| Clase 2  | 21/03/2025 | [Ver Clase 2](./clase2)   |
-| Clase 3  | 04/04/2025 | [Ver Clase 3](./clase3)   |
-| Clase 4  | 11/04/2025 | [Ver Clase 4](./clase4)   |
-| Clase 5  | 15/04/2025 | [Ver Clase 5](./clase5)   |
-| Clase 6  | 25/04/2025 | [Ver Clase 6](./clase6)   |
-| Clase 7  | 02/05/2025 | [Ver Clase 7](./clase7)   |
-| Clase 8  | 09/05/2025 | [Ver Clase 8](./clase8)   |
-| Clase 9  | 16/05/2025 | [Ver Clase 9](./clase9)   |
-| Clase 10 | 23/05/2025 | [Ver Clase 10](./clase10) |
+| Clase        | Fecha      | Enlace                       |
+| ------------ | ---------- | ---------------------------- |
+| Clase 1      | 14/03/2025 | [Ver Clase 1](./clase1)      |
+| Clase 2      | 21/03/2025 | [Ver Clase 2](./clase2)      |
+| Clase 3      | 04/04/2025 | [Ver Clase 3](./clase3)      |
+| Clase 4      | 11/04/2025 | [Ver Clase 4](./clase4)      |
+| Clase 5      | 15/04/2025 | [Ver Clase 5](./clase5)      |
+| Clase 6      | 25/04/2025 | [Ver Clase 6](./clase6)      |
+| Clase 7      | 02/05/2025 | [Ver Clase 7](./clase7)      |
+| Clase 8      | 09/05/2025 | [Ver Clase 8](./clase8)      |
+| Clase 9      | 16/05/2025 | [Ver Clase 9](./clase9)      |
+| Clase 10     | 23/05/2025 | [Ver Clase 10](./clase10)    |
+| Clase Repaso | 09/06/2025 | [Ver Clase Repaso](./repaso) |
 
 ---
 
