@@ -42,9 +42,7 @@ $$ LANGUAGE plpgsql;
 1. El **estado** del autobús (`xestado`), por ejemplo, “En servicio” o “Mantenimiento”.
 2. La **capacidad de carga total** (`xcapacidad`), calculada como:
 
-$$
-\text{capacidad de asientos} \times \text{peso promedio por asiento}
-$$
+> capacidad de asientos \* peso promedio por asiento
 
 ```sql
 CREATE OR REPLACE PROCEDURE p_estado(IN xid INT, IN xpeso INT, OUT xestado VARCHAR, OUT xcapacidad INT)
