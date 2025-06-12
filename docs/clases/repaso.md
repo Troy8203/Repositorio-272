@@ -280,7 +280,7 @@ WHERE conductor_id = 7;
 SELECT * FROM historial_conductores;
 ```
 
-### Ejercicio UPDATE
+### Ejercicio DELETE
 
 **Objetivo:** Mantener un registro de las rutas eliminadas en una nueva tabla
 

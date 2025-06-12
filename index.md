@@ -31,6 +31,8 @@ Aquí encontrarás las instrucciones detalladas de cada práctica, incluyendo ej
 
 - [Ir a Practica Nro. 2](./docs/practica/practica2.md)
 
+- [Ir a Practica Nro. 3](./docs/practica/practica3.md)
+
 ---
 
 ## Tecnologías Utilizadas
