@@ -37,7 +37,7 @@ Dado un id de conductor mostrar su nombre conpleto y la cantidad total de pasaje
 
 ##### Resultado id=2:
 
-[![image.png](https://i.postimg.cc/7Zsnr1Nk/image.png)](https://postimg.cc/WdZkMkKW)
+[![image.png](https://i.postimg.cc/m2q8V7nW/image.png)](https://postimg.cc/WhGG1qj5)
 
 #### Ejercicio 2
 
@@ -63,4 +63,4 @@ WHERE horario_id = 1;
 
 se deberia mostrar de la siguiente manera
 
-[![image.png](https://i.postimg.cc/3xCyp2Rv/image.png)](https://postimg.cc/sMxDCQ5j)
+[![image.png](https://i.postimg.cc/0jHGrqSJ/image.png)](https://postimg.cc/Cnkn6XmF)
